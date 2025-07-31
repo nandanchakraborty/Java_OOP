@@ -1,0 +1,27 @@
+//some list method practice using jshell
+
+
+jshell> List<String> words = List.of("apple","bat","cat");
+words ==> [apple, bat, cat]
+
+jshell> words.size()
+$2 ==> 3
+
+jshell> words.isEmpty()
+$3 ==> false
+
+jshell> words.get(0)
+$4 ==> "apple"
+
+jshell> words.contains("cat")
+$5 ==> true
+
+jshell> words.indexOf("cat")
+   ...>
+$6 ==> 2
+
+jshell> words.get(0)
+$7 ==> "apple"
+
+***Using the "of" word such as List.of is immutable that means u cant change anything from that.no addition
+ but can delete

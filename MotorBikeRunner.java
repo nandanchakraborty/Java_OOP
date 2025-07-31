@@ -6,11 +6,7 @@ public class MotorBikeRunner {
         ducati.start();
         honda.start();
 
-      //  ducati.speed = 100;
-       // honda.speed = 80;
-        //after some time their state may change
-
-     //   ducati.speed = 20;
+        ducati.setSpeed(100);
      //   honda.speed = 10;
         //here this class is directly accessing the internal variables
         //of other class.which break encapsulation  process.that mean other class
@@ -23,9 +19,21 @@ public class MotorBikeRunner {
 
         //Now we can access speed through method
 
-        System.out.println(ducati.setSpeed(100));
-        honda.setSpeed(80);
-        System.out.println();
 
-}
+    /*   so this is the manuel form of increasing the speed
+      we can easily do it by making a method; watch the MotorBike class
+
+       { int ducatiSpeed = ducati.getSpeed();//get ducati speed
+        ducatiSpeed = ducatiSpeed + 100;//increase it
+        ducati.setSpeed(ducatiSpeed);//set it to ducati
+       System.out.println(ducati.getSpeed());}
+
+     */
+        ducati.increaseSpeed(100);
+        ducati.decreaseSpeed(200);
+        honda.increaseSpeed(80);
+        System.out.println(ducati.getSpeed());
+        System.out.println(honda.getSpeed());
+
+    }
 }

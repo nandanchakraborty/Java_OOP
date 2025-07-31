@@ -1,0 +1,63 @@
+jshell> interface Interface{    //creating interface
+   ...>     void method();
+   ...> }
+|  created interface Interface
+
+
+jshell> interface Interface2 extends Interface{   //an interface can extend another interface
+   ...>     void method2();
+   ...> }
+|  created interface Interface2
+
+jshell> class Implementation implements Interface2{
+//when a class implements an interface ,it has to implement all the method that interfaces has;
+
+   ...>     public void method2(){  //method from interface2
+   ...>     }
+   ...>     public void method(){  //method from interface  because interface2 extend interface
+   ...>     }
+   ...> }
+|  created class Implementation
+
+jshell> abstract class ImplementationAbstruct implements Interface2{
+//only abstract class can implement any part of methods from interfaces
+   ...>     public void method(){}
+   ...> }
+|  created class ImplementationAbstruct
+
+jshell> interface interface4{
+//if a interface has in interface ,doesn't need to implement it in implement classes ,but can use it in implement classes;
+
+   ...>     default void print(){
+   ...>         System.out.println("this is default");
+   ...>     }
+   ...> }
+|  created interface interface4
+
+jshell> class Test implements interface4{//here didn't implement the default function;
+   ...> }
+|  created class Test
+
+jshell> Test test = new Test()
+test ==> Test@3532ec19
+
+jshell> test.print() //here but using the default function
+this is default
+
+
+jshell> interface inter{ //interface doesn't hold variable;but constant
+   ...>     int test;
+   ...> }
+|  Error:
+|  = expected
+|      int test;
+|              ^
+
+jshell> interface inter{
+   ...>     int test=5;
+   ...> }
+|  created interface inter
+
+Comparison of interface and abstract : its like apple and orange
+//Interface doesn't have anything private but abstract can be have private method
+//u can extend multiple interface but can not extend multiple abstract classes
