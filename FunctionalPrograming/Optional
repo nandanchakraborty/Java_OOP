@@ -1,0 +1,11 @@
+Optional is just a way of not returning null
+whenever u returning something which might exist or not then u can
+return an optional back
+and that's what most of the methods in the stream do.
+
+ List.of(23,45,67,12).stream().filter(n->n%2==0).max((n1,n2)->Integer.compare(n1,n2))
+$1 ==> Optional[12]
+
+List.of(23,45,67).stream().filter(n->n%2==0).max((n1,n2)->Integer.compare(n1,n2))
+$4 ==> Optional.empty
+
