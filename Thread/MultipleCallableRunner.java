@@ -12,10 +12,12 @@ public class MultipleCallableRunner {
 
         List<CallableTask> task = List.of(new CallableTask("Nandan"), new CallableTask("Pranta"),
                 new CallableTask("MUMU"));
-        List<Future<String>> results = executorservice.invokeAll(task);
-        for(Future<String> result: results){
-            System.out.println(result.get());
-        }
+       // List<Future<String>> results = executorservice.invokeAll(task); //this is for all thread to run at the same time
+
+        String result = executorservice.invokeAny(task);//this will do any thread to run at a single time
+
+            System.out.println(result);
+
 
 
         executorservice.shutdown();
