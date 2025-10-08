@@ -1,4 +1,4 @@
-package MultiThreads;
+package Thread;
 
 
     /*

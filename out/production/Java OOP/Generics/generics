@@ -1,0 +1,18 @@
+Generics were introduced in Java 5 to provide type safety to collections. The use of generics allows us to define collections that can hold elements of specific types only. This type safety helps us catch type mismatches at compile time instead of runtime. Wildcards in Java Generics allow us to specify collections that can hold elements of any type or a specific type.
+
+Wildcard Basics
+
+A wildcard is represented by the “?” symbol. It can be used in place of the type parameter in a generic class or method. There are three types of wildcards in Java Generics.
+
+Unbounded Wildcards: “?” The unbounded wildcard represents a collection that can hold elements of any type. It can be used when we don’t know what type of elements we will be working with.
+Example:
+
+List<?> list = new ArrayList<>();
+Upper-bounded Wildcards: “? extends Type” The upper-bounded wildcard represents a collection that can hold elements of a specific type or any of its subtypes. It can be used when we want to restrict the collection to hold elements of a specific type or its subtypes.
+Example:
+
+List<? extends Number> list = new ArrayList<>();
+Lower-bounded Wildcards: “? super Type” The lower-bounded wildcard represents a collection that can hold elements of a specific type or any of its supertypes. It can be used when we want to restrict the collection to hold elements of a specific type or its supertypes.
+Example:
+
+List<? super Integer> list = new ArrayList<>();

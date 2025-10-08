@@ -36,6 +36,7 @@ public class problemSolveWithFp {
     }
 }
 
-/*this is a basic problem solve with fp
+/*
+this is a basic problem solve with fp
 a string list to count the number of alphabets in a word
  */
