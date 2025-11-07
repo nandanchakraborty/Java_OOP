@@ -25,6 +25,16 @@ instance.
 **Static method**
 1.If u make any method static,u can access it by using class name.Because it is shared by the class.But if u make method 
 nonstatic it only accessible by using class instance
-2.In a static method,u cant use non static variables or method but in a instance method ,u can use static variables and
+2.In a static method,u cant use nonstatic variables or method but in a instance method ,u can use static variables and
 methods
 **Nested class**
+Nested classes are those classes which are inside another class. The entire declaration of the class is inside another
+class.  A non-static nested class is called a inner class and an inner class cannot exist without
+the enclosing class instance.So, an enclosing class instance is needed to be able to create instances of the inner class.
+Therefore, in the inner class methods, you can access variables which are declared inside the nested class.
+A StaticNestedClass, on the other hand, is a static thing. So, it can exist without an instance of the enclosing class.
+You can directly create an instance of the StaticNestedClass and use it as if it's a separate class on its own.
+However, inside a StaticNestedClass, you cannot access the member variables of the enclosing class.
+
+
+
