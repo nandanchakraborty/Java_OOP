@@ -36,5 +36,11 @@ A StaticNestedClass, on the other hand, is a static thing. So, it can exist with
 You can directly create an instance of the StaticNestedClass and use it as if it's a separate class on its own.
 However, inside a StaticNestedClass, you cannot access the member variables of the enclosing class.
 
+************************Anonymous class************************
+An anonymous class in Java is an inner class defined without a name. It is typically created and instantiated at 
+the same time, often used to override methods of an existing class or implement an interface. They are useful for 
+creating single-use objects, particularly in scenarios involving event handling or functional interfaces. Anonymous 
+classes must be defined inside another class.
+
 
 
