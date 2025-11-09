@@ -25,11 +25,11 @@ instance.
 **Static method**
 1.If u make any method static,u can access it by using class name.Because it is shared by the class.But if u make method 
 nonstatic it only accessible by using class instance
-2.In a static method,u cant use nonstatic variables or method but in a instance method ,u can use static variables and
+2.In a static method,u cant use nonstatic variables or method but in an instance method ,u can use static variables and
 methods
 **Nested class**
 Nested classes are those classes which are inside another class. The entire declaration of the class is inside another
-class.  A non-static nested class is called a inner class and an inner class cannot exist without
+class.  A non-static nested class is called an inner class and an inner class cannot exist without
 the enclosing class instance.So, an enclosing class instance is needed to be able to create instances of the inner class.
 Therefore, in the inner class methods, you can access variables which are declared inside the nested class.
 A StaticNestedClass, on the other hand, is a static thing. So, it can exist without an instance of the enclosing class.
@@ -42,5 +42,6 @@ the same time, often used to override methods of an existing class or implement 
 creating single-use objects, particularly in scenarios involving event handling or functional interfaces. Anonymous 
 classes must be defined inside another class.
 
-
-
+**************Enum in java  /enumeration**************
+An enum is a special "class" that  represents as a group of constant.To create an enum,use the enum keyword,and separate 
+the constant with a comma . Note that they should be in uppercase letters.
